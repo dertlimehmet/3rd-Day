@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 10px 15px;
+            margin: 5px 0px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        form {
+            margin: 20px;
+            background-color: rgb(193, 152, 152);
+            border: 1px solid rgb(5, 50, 5);
+            padding: 15px;
+            border-radius: 10px;
+            width: 500px;
+        }
+
+        .btn {
+            background-color: rgb(222, 227, 226);
+            color: royalblue;
+            padding: 10px 20px;
+            margin: 10px 10px 10px 0px;
+            border: 1px solid thistle;
+            border-radius: 7px;
+            font-size: 20px;
+            font-weight: bold;
+            position: absolute;
+            top: 117px;
+            left: 412px;
+        }
+
+        .btn:hover {
+            background-color: rgb(56, 81, 73);
+            cursor: pointer;
+        }
+
+        input[type=checkbox] {
+            width: 24px;
+            height: 18px;
+            padding: 10px 15px;
+            margin: 5px 0px;
+
+        }
+
+        #checkkRememberMeLabel {
+            margin: 1px;
+            padding: 1px;
+        }
+        #login_wrapper{
+            position: relative;
+        }
+        #reklam{
+            position: fixed;
+            right: 0px;
+            top: 0px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="reklam"></div>
+    <p></p>
+    <br>
+    <br>
+    <br>
+
+    <form>
+        <div id="login_wrapper">
+            <div>
+                <Label for="textEmail">Email:</Label><br />
+                <input id="textEmail" type="text" />
+            </div>
+            <div>
+                <Label for="textPassword">Şifre:</Label><br />
+                <input id="textPassword" type="password" />
+            </div>
+            <div>
+                <Label for="textCheckbox" id="checkRememberMeLabel">Beni Hatırla:</Label>
+                <input id="textCheckbox" type="checkbox" />
+            </div>
+            <div>
+                <input id="btnSignIn" class="btn" type="button" value="Giriş" />
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>
